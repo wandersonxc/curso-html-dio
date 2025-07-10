@@ -68,14 +68,15 @@ ul {
     border-bottom: none;
 }
 
-a { 
-    color: #005fcc; 
+a {
+    color: #005fcc !important;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #003d99;
+a:hover,
+a:focus {
+    color: #003d99 !important;
     text-decoration: underline;
 }
 
@@ -266,9 +267,7 @@ figure {
 }
 
 /* Garantir contraste perfeito em todos os elementos */
-* {
-    color: #1a1a1a;
-}
+/* Removido seletor universal para evitar impacto de performance */
 
 h1, h2, h3, h4, h5, h6 {
     color: #1a1a1a !important;
@@ -279,13 +278,7 @@ p, li, dt, dd, time, span, div {
 }
 
 /* Links mantêm cor específica */
-a {
-    color: #005fcc !important;
-}
-
-a:hover, a:focus {
-    color: #003d99 !important;
-}
+/* (Merged with main link styles above) */
 
 /* Footer mantém cor branca */
 .footer, .footer * {
@@ -319,11 +312,6 @@ dd {
 /* Elementos de tempo */
 time {
     font-variant-numeric: tabular-nums;
-    color: #1a1a1a;
-}
-
-/* Melhor contraste para textos */
-.app-card p {
     color: #1a1a1a;
 }
 
