@@ -17,13 +17,38 @@
 </head>
 <body>
   <header>
-    <section class="logo">
-      <img
-        src="assets/img/wikipedia-logo.png"
-        alt="Logo da Wikipedia"
-        loading="lazy"
-      />
-    </section>
+    <div class="header-container">
+      <div class="logo-section">
+        <img
+          src="assets/img/wikipedia-logo.png"
+          alt="Wikipedia"
+          class="logo-img"
+          loading="lazy"
+        />
+      </div>
+      
+      <div class="search-container">
+        <form class="search-form" action="https://pt.wikipedia.org/w/index.php" method="get" role="search">
+          <div class="search-wrapper">
+            <label for="search-input" class="sr-only">Pesquisar na Wikipedia</label>
+            <input
+              type="text"
+              id="search-input"
+              name="search"
+              class="search-input"
+              placeholder="Pesquisar na Wikipedia..."
+              aria-label="Pesquisar na Wikipedia"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="search-button" aria-label="Pesquisar">
+              🔍
+            </button>
+          </div>
+          <input type="hidden" name="title" value="Special:Search" />
+        </form>
+      </div>
+    </div>
   </header>
 
   <section class="bar" aria-hidden="true"></section>
@@ -75,6 +100,11 @@
         </p>
       </aside>
 
+      <figure>
+        <img src="assets/img/escudo.png" alt="Escudo do São Paulo FC" class="club-logo" loading="lazy" />
+        <figcaption>Escudo oficial do São Paulo Futebol Clube - Tricampeão Mundial</figcaption>
+      </figure>
+
       <section id="historia" aria-labelledby="historia-titulo">
         <h2 id="historia-titulo">História</h2>
         <p>
@@ -124,6 +154,11 @@
         </dl>
       </section>
 
+      <figure>      
+        <img src="assets/img/campeaodetudo.png" alt="São Paulo Campeão de Tudo" class="club-logo" loading="lazy" />
+        <figcaption>São Paulo Super Campeão de Tudo!</figcaption>
+      </figure>
+
       <section id="idolos" aria-labelledby="idolos-titulo">
         <h2 id="idolos-titulo">Ídolos e Grandes Jogadores</h2>
         <p>O São Paulo revelou e contou com grandes jogadores ao longo de sua história:</p>
@@ -135,7 +170,7 @@
           </article>
           <article class="app-card">
             <h4>Meio-campistas</h4>
-            <p>Raí, Kaká, Hernanes, Ganso, Lucas Moura</p>
+            <p>Raí, Kaká, Hernanes, Lucas Moura</p>
           </article>
           <article class="app-card">
             <h4>Defensores</h4>
@@ -160,12 +195,17 @@
         </ul>
       </section>
 
+      <figure>
+        <img src="assets/img/estadio.png" alt="Estádio do Morumbi" class="club-logo" loading="lazy" />
+        <figcaption>Estádio do Morumbis - Casa do São Paulo FC</figcaption>
+      </figure>
+
       <section id="curiosidades" aria-labelledby="curiosidades-titulo">
         <h2 id="curiosidades-titulo">Curiosidades</h2>
         <ul>
           <li>É o único clube brasileiro tricampeão mundial</li>
           <li>Rogério Ceni é o goleiro que mais fez gols na história do futebol</li>
-          <li>O estádio do Morumbi já foi o maior estádio privado do Brasil</li>
+          <li>O estádio do Morumbis já foi o maior estádio privado do Brasil</li>
           <li>O clube revelou craques como Kaká</li>
           <li>As cores oficial são vermelho, branco e preto</li>
         </ul>
@@ -219,7 +259,7 @@
         Conteúdo disponível sob Creative Commons.
       </p>
       <p>Projeto: Recriação do Wikipedia do curso Formação HTML Developer - DIO.me</p>
-      <p>Última modificação: <time datetime="2025-07-10">10 de julho de 2025</time></p>
+      <p>Última modificação: <time datetime="2025-07-11">11 de julho de 2025</time></p>
     </section>
   </footer>
 </body>

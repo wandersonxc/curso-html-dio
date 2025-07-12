@@ -26,7 +26,7 @@ HTML5, CSS3
 Neste desafio, o objetivo foi recriar visualmente a interface da Wikipedia com base em um tema específico: o clube **São Paulo Futebol Clube**.
 
 **Destaques do projeto:**
-- Header fixo com logotipo
+- Header fixo com logotipo e barra de pesquisa do Wikipedia
 - Barra lateral esquerda com navegação principal
 - Sumário (anchors) na lateral direita
 - Layout central com conteúdo estruturado e semântico
